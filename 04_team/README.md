@@ -1,4 +1,5 @@
-# 04_team(팀명)
+# 04_team
+## [배포](https://hyunjungc-dev.github.io/HTML_CSS_Project/04_team/index.html)
 
 ## 팀 구성 및 역할 분담
 
