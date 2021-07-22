@@ -582,8 +582,8 @@ button {
 .fixedIcon {
   display: block;
   position: fixed;
-  bottom: 8vh;
-  right: 1.5vw;
+  bottom: 14.5vh;
+  right: 4.9vw;
   z-index: 15;
 }
 
