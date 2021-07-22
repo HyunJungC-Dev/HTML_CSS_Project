@@ -579,6 +579,14 @@ button {
   cursor: pointer;
 }
 
+.fixedIcon {
+  display: block;
+  position: fixed;
+  bottom: 8vh;
+  right: 1.5vw;
+  z-index: 15;
+}
+
 .icon {
   position: relative;
   display: inline-block;
@@ -617,6 +625,13 @@ button {
 }
 .iconRightArrow::before {
   background-position: -13.75em -2.5em;
+}
+.iconHighContrast {
+  width: 2.5em;
+  height: 2.5em;
+}
+.iconHighContrast::before {
+  background-position: -25.9375em -4.6875em;
 }
 .iconLogo {
   width: 8.75em;
@@ -974,28 +989,36 @@ button {
   padding: 0.3125em 0.1875em;
   border-radius: 15px;
 }
-.stylishEmoticon .hashTag--big.hashTag--mint {
-  background-color: none;
-  color: #137a63;
-}
-.stylishEmoticon .hashTag--small.hashTag--mint {
-  background-color: #137a63;
-  color: #fff;
-}
 .stylishEmoticon .hashTag--big.hashTag--red {
   background-color: none;
-  color: #c80815;
+  color: #ff6c6c;
 }
 .stylishEmoticon .hashTag--small.hashTag--red {
-  background-color: #c80815;
+  background-color: #ff6c6c;
   color: #fff;
 }
-.stylishEmoticon .hashTag--big.hashTag--skyblue {
+.stylishEmoticon .hashTag--big.hashTag--kakao {
   background-color: none;
-  color: #6a5acd;
+  color: #ffcc00;
 }
-.stylishEmoticon .hashTag--small.hashTag--skyblue {
-  background-color: #6a5acd;
+.stylishEmoticon .hashTag--small.hashTag--kakao {
+  background-color: #ffcc00;
+  color: #fff;
+}
+.stylishEmoticon .hashTag--big.hashTag--purple {
+  background-color: none;
+  color: #898dfa;
+}
+.stylishEmoticon .hashTag--small.hashTag--purple {
+  background-color: #898dfa;
+  color: #fff;
+}
+.stylishEmoticon span.hashTag--big.hashTag--highContrast {
+  background-color: none;
+  color: #191919;
+}
+.stylishEmoticon span.hashTag--small.hashTag--highContrast {
+  background-color: #191919;
   color: #fff;
 }
 @media screen and (max-width: 767px) {

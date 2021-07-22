@@ -25,25 +25,30 @@
     border-radius: 15px;
   }
 
-  .hashTag--big.hashTag--mint {
-    @include hashTagColor($c: $SecondaryMint);
-  }
-  .hashTag--small.hashTag--mint {
-    @include hashTagColor($bgc: $SecondaryMint);
-  }
-  .hashTag--big.hashTag--red{
-    @include hashTagColor($c: $SecondaryRed2);
+  .hashTag--big.hashTag--red {
+    @include hashTagColor($c: $SecondaryRed);
   }
   .hashTag--small.hashTag--red {
-    @include hashTagColor($bgc: $SecondaryRed2);
+    @include hashTagColor($bgc: $SecondaryRed);
   }
-  .hashTag--big.hashTag--skyblue {
-    @include hashTagColor($c: $SecondarySkyblue);
+  .hashTag--big.hashTag--kakao {
+    @include hashTagColor($c: $SecondaryKakaoYellow);
   }
-  .hashTag--small.hashTag--skyblue {
-    @include hashTagColor($bgc: $SecondarySkyblue);
+  .hashTag--small.hashTag--kakao {
+    @include hashTagColor($bgc: $SecondaryKakaoYellow);
   }
-
+  .hashTag--big.hashTag--purple {
+    @include hashTagColor($c: $SecondaryLightPurple);
+  }
+  .hashTag--small.hashTag--purple {
+    @include hashTagColor($bgc: $SecondaryLightPurple);
+  }
+  span.hashTag--big.hashTag--highContrast {
+    @include hashTagColor($c: $primaryBlack);
+  }
+  span.hashTag--small.hashTag--highContrast {
+    @include hashTagColor($bgc: $primaryBlack);
+  }
   @include mobile {
     &__item {
       margin-bottom: em(40);

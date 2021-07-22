@@ -1,4 +1,12 @@
 // 아이콘 스타일 ------------------------------------------------------------------ /
+.fixedIcon {
+  display: block;
+  position: fixed;
+  bottom: 8vh;
+  right: 1.5vw;
+  z-index: 15;
+}
+
 .icon {
   // 아이콘 공통 -------------------------------------------------------------------- /
   position: relative;
@@ -41,6 +49,15 @@
     height: em(15);
     &::before {
       background-position: em(-220) em(-40);
+    }
+  }
+
+  // 고대비모드 버튼 ------------------------------------------------------------------ /
+  &HighContrast {
+    width: em(40);
+    height: em(40);
+    &::before {
+      background-position: em(-415) em(-75);
     }
   }
 
