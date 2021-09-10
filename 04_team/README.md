@@ -1,69 +1,23 @@
-# 04_team
-## [배포](https://hyunjungc-dev.github.io/HTML_CSS_Project/04_team/index.html)
+# [카카오 이모티콘 샵](https://e.kakao.com/) 분석 및 개선
++ [개선한 페이지 보기](https://hyunjungc-dev.github.io/improving-emoticonShop/04_team/index.html)
++ [프로젝트 정리 및 회고](https://velog.io/@bambi-bam/%EC%B9%B4%EC%B9%B4%EC%98%A4-%EC%9D%B4%EB%AA%A8%ED%8B%B0%EC%BD%98-%EC%83%B5-%EB%B6%84%EC%84%9D-%EB%B0%8F-%EA%B0%9C%EC%84%A0-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8)
 
-## 팀 구성 및 역할 분담
+## 🔧 Team 4
+|팀원| 담당 역할|
+|------|---|
+|허재혁|홈 HTML 마크업 작성, 헤더 및 네비게이션 스타일링|
+|안승재|홈 HTML 마크업 작성, 신규 이모티콘 콘텐츠, 푸터 영역 스타일링|
+|**조현정**|**홈 HTML 마크업 작성, 인기 이모티콘 콘텐츠, 스타일 콘텐츠 스타일링**|
 
-- 안승재: 홈 HTML 마크업 작성, 신규 이모티콘 콘텐츠, 푸터 영역 스타일링
-- 조현정: 홈 HTML 마크업 작성, 인기 이모티콘 콘텐츠, 스타일 콘텐츠 스타일링
-- 허재혁: 홈 HTML 마크업 작성, 헤더 및 네비게이션 스타일링
+## ❓ 프로젝트 진행 이유
+현재 이미 서비스 중인 웹 사이트를 분석하여 왜 지금과 같이 마크업을 했는지, 같은 기능을 다르게 구현할 수는 없었는지를 고민해보기 위해서
 
-## 선택한 서비스: [카카오 이모티콘샵](https://e.kakao.com/)
+## ❓ 카카오 이모티콘 샵을 선택한 이유
+✔ 직접 사용해 보았을 때, 이미지가 주 컨텐츠인만큼 이미지가 늦게 로딩되는 경우 그 공백이 눈에 들어왔다. 
+✔ Light House 분석 결과 Performance도 다른 웹 사이트에 비해 점수가 낮아서 이를 개선해보고 싶었다.     
++ 카카오 이모티콘 샵 Light House 결과⬇️  
+<img src='https://user-images.githubusercontent.com/52691074/132845722-c5e81c81-f703-4548-8c66-2a8c93baea7b.png' alt='카카오 이모티콘 샵 Light House 분석 결과' title='카카오 이모티콘 샵 Light House 분석 결과' width='600'/>
 
-## 코딩 컨벤션
-
-- HTML, CSS 네이밍 컨벤션: [BEM(Block, Element, Modifier)](http://getbem.com/)
-  - `(blockName)__(elementName)--(modifier)-(value)`
-    - Block: 그 자체로 의미가 있는 entity
-    - Element: 그 자체로 의미가 없고 block에 의미론적으로 종속돼있는 entity의 부분
-    - Modifier: block과 element의 모습과 행동을 변경을 표시하는 flag
-    
-- github collaboration 컨벤션: git flow
-  - `FEATURE_NAME` 네이밍: 작업하는 부분 및 기능(예. navigation-bar-markup)으로 네이밍한다.
-  - `commit`: 위 BEM 컨벤션 중 block 단위로 커밋한다. 커밋 메시지 형식은 [AngularJS 포맷](https://gist.github.com/stephenparish/9941e89d80e2bc58a153)을 따른다.
-  - `pull request`: 작업단위 구현이 완성되면 github pull request를 보낸다. `FEATURE_NAME(이름 이니셜) - 날짜`의 형식으로 네이밍한다. 예시) navigation-bar-markup(HJH) - 210503
-  
-```shell
-git flow init # initialize git flow
-
-git flow feature start FEATURE_NAME # start new feature
-
-git flow feature finish FEATURE_NAME # finish up feature
-```
-
-## 프로젝트 관리
-
-- Github Project
-  - To do: 개발해야 할 block 단위로 생성한다. 포맷 description은 아래와 같이 한다.
-  ```
-    `FEATURE_NAME`
-    - Assignee: 허재혁
-    - Docs: url
-    - Deadline: 210503
-  ```
-  - In progress: block 단위의 To do를 생성하고 작업 시작되면 In progress로 이동시킨다.
-  - Done: pull request가 완료되면 팀장이 Done으로 옮긴다.
-  - Hotfix: Hotfix 사항이 발생하면 팀장은 팀원에게 Assign한다.
-  
-- discord: github webhooks을 연동하여 github message를 공유한다.
-
-## 의존성 패키지 모듈
-
-| 패키지명 | 설명 |
-|-|-|
-| live-server | 라이브 서버 실행 |
-| htmlhint | HTML 파일에 대한 문법검사를 수행 |
-| chokidar-cli | htmlhint가 watch 옵션을 제공하지 않는 문제를 해결 |
-| sass | Dart Sass 설치 |
-| normalize-scss | normalize.css의 sass 버전 |
-| postcss | postcss를 사용하기 위한 패키지 |
-| autoprefixer | 자동으로 웹브라우저 별 접두사를 생성 |
-| postcss-csso | css 파일 최적화(압축) |
-| postcss-combine-media-query | 미디어쿼리 병합 |
-| npm-run-all | 2개 이상의 npm 스크립트 명령을 직렬 또는 병렬로 수행 |
-
-## References
-
-- BEM: [http://getbem.com/](http://getbem.com/)
-- git flow: [https://danielkummer.github.io/git-flow-cheatsheet/](https://danielkummer.github.io/git-flow-cheatsheet/)
-- AngularJS commit conventions: [https://gist.github.com/stephenparish/9941e89d80e2bc58a153](https://gist.github.com/stephenparish/9941e89d80e2bc58a153)
-
+## ❗️ 목표
+✔ 카카오 이모티콘 샵의 메인 페이지를 마크업, 접근성, 성능 관점에서 분석하고 개선하기       
+✔ 개선 후 Light House 분석 결과를 비교해 유의미한 변화 확인 
