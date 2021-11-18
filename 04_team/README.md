@@ -1,6 +1,7 @@
-# [카카오 이모티콘 샵](https://e.kakao.com/) 분석 및 개선
-+ [개선한 페이지 보기](https://hyunjungc-dev.github.io/improving-emoticonShop/04_team/index.html)
-+ [프로젝트 정리 및 회고](https://velog.io/@bambi-bam/%EC%B9%B4%EC%B9%B4%EC%98%A4-%EC%9D%B4%EB%AA%A8%ED%8B%B0%EC%BD%98-%EC%83%B5-%EB%B6%84%EC%84%9D-%EB%B0%8F-%EA%B0%9C%EC%84%A0-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8)
+# 😄 Improving Emoticon Shop
+✅ [카카오 이모티콘 샵](https://e.kakao.com/)을 마크업, 접근성, 성능 관점에서 분석하고 개선하는 프로젝트
++ [배포](https://hyunjungc-dev.github.io/improving-emoticonShop/04_team/index.html)
++ [프로젝트 정리 및 회고 - velog](https://velog.io/@bambi-bam/%EC%B9%B4%EC%B9%B4%EC%98%A4-%EC%9D%B4%EB%AA%A8%ED%8B%B0%EC%BD%98-%EC%83%B5-%EB%B6%84%EC%84%9D-%EB%B0%8F-%EA%B0%9C%EC%84%A0-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8)
 
 ## 🔧 Team 4
 |팀원| 담당 역할|
